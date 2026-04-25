@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: biasguard-ai
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false

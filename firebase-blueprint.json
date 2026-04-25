@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Feedback": {
+      "title": "Feedback",
+      "description": "User feedback and issues",
+      "type": "object",
+      "properties": {
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["open", "closed", "in-progress"] }
+      },
+      "required": ["subject", "message", "createdAt", "status"]
+    }
+  },
+  "firestore": {
+    "/feedback/{feedbackId}": {
+      "schema": "Feedback",
+      "description": "Feedback submitted by users"
+    }
+  }
+}

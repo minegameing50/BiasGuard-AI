@@ -1,0 +1,6 @@
+{
+  "name": "BiasGuard AI",
+  "description": "Upload datasets to analyze and detect bias, explain AI decisions, and get suggestions to improve fairness in machine learning models.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
